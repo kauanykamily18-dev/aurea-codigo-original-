@@ -1,0 +1,65 @@
+.fab-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+.fab {
+  width: 55px;
+  height: 55px;
+  background-color: #1A3B5F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  
+}
+
+.fab a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+/* Ícones escondidos inicialmente */
+.fab:not(.fab-main):not(.fab-close) {
+  opacity: 0;
+  transform: translateY(0);
+  pointer-events: none;
+}
+
+/* Ícone de fechar e seta */
+.fab-close, .fab-up {
+  display: none;
+}
+
+/* Ícones abertos */
+.fab-container.active .fab:not(.fab-main) {
+  opacity: 1;
+  transform: translateY(-10px);
+  pointer-events: auto;
+}
+
+/* Espaçamento entre ícones */
+.fab-container.active .fab:nth-child(3) { transform: translateY(-70px); }
+.fab-container.active .fab:nth-child(4) { transform: translateY(-130px); }
+.fab-container.active .fab:nth-child(5) { transform: translateY(-190px); }
+.fab-container.active .fab:nth-child(6) { transform: translateY(-250px); }
+.fab-container.active .fab:nth-child(7) { transform: translateY(-310px); }
+.fab-container.active .fab:nth-child(8) { transform: translateY(-370px); }
+
+

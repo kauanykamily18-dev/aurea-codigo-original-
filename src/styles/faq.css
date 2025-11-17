@@ -1,0 +1,118 @@
+/* ESTILO GERAL */
+.faq-section {
+  padding: 60px 20px;
+  background: #eef6ff;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #1A3B5F;
+  letter-spacing: -0.5px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ITEM */
+.faq-item {
+  background: #fff;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: all .25s ease;
+  position: relative;
+}
+
+/* HOVER SUAVE */
+.faq-item:hover {
+  transform: translateY(-3px);
+}
+
+/* PERGUNTA */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 24px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1A3B5F;
+  cursor: pointer;
+}
+
+/* SETA — SOMENTE UM GIRINHO SUAVE, SEM 3D */
+.faq-question .arrow {
+  font-size: 1.5rem;
+  transition: transform .25s ease;
+  transform-origin: center;
+}
+
+.faq-item.active .faq-question .arrow {
+  transform: rotate(45deg);
+}
+
+/* RESPOSTA */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 0 24px;
+  transition: max-height .35s ease;
+}
+
+/* TEXTO */
+.faq-answer p {
+  padding: 18px 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: .98rem;
+}
+
+/* Ícone minimalista (apenas o símbolo, estilo iOS) */
+.icon {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.35s ease;
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Linha vertical */
+.icon::before {
+    width: 3px;
+    height: 18px;
+}
+
+/* Linha horizontal */
+.icon::after {
+    width: 18px;
+    height: 3px;
+}
+
+/* Ativo vira X */
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}

@@ -1,0 +1,186 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    color: #1A3B5F
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.shape, #cta {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding-bottom: 0;
+}
+nav {
+    margin-bottom: 0;
+}
+
+#home,
+#cta {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#banner img {
+    width: 100%;
+    display: block;
+}
+.banner-wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.banner-slide {
+    min-width: 100%;
+}
+
+.banner-slide img {
+    width: 100%;
+    display: block;
+}
+.banner-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #1A3B5F;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 5px 12px;
+    transition: 0.2s;
+}
+
+.banner-btn:hover {
+    opacity: 0.6;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+    
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+} 
+/* NAV MAIS PEQUENO NO MOBILE */
+@media screen and (max-width: 1170px) {
+
+    header {
+        padding: 6px 4% !important;
+    }
+
+    #navbar {
+        padding: 0;
+        height: 60px; /* diminui a altura */
+    }
+
+    #nav_logo {
+        height: 55px !important; /* logo menor */
+        width: auto;
+    }
+
+    #mobile_btn {
+        font-size: 1.4rem !important; /* botão hambúrguer menor */
+    }
+
+    /* menu aberto também ajustado para ficar menor */
+    #mobile_menu.active {
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    #mobile_nav_list {
+        gap: 6px;
+    }
+
+    #mobile_nav_list .nav-item a {
+        font-size: 0.95rem;
+        padding: 6px 0;
+    }
+}
+
+
+/* ainda menor para celulares pequenos */
+@media screen and (max-width: 450px) {
+
+    #navbar {
+        height: 52px;
+    }
+
+    #nav_logo {
+        height: 48px !important;
+    }
+
+    #mobile_btn {
+        font-size: 1.25rem !important;
+    }
+
+    #mobile_nav_list .nav-item a {
+        font-size: 0.85rem;
+    }
+}

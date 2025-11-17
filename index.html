@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Aurea</title>
+</head>
+<body>
+    
+     <header>
+        <nav id="navbar">
+            <a href="#home">
+            <img src="src/img/logo (2).png" id="nav_logo" alt="Aurea Logo"></a>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://wa.me/6599686879">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="src/pdf/alma-brasileira.pdf" download>Conheça mais</a>
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://wa.me/6599686879">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="src/pdf/alma-brasileira.pdf" download>Conheça mais</a>
+            </button>
+            
+        </div>
+    </header>
+<main id="content">
+   <section id="home">
+    <div class="shape"></div>
+
+    <div id="banner">
+        <div class="banner-wrapper">
+            <div class="banner-slide active">
+                <img src="src/img/header 2 (1).png" alt="Imagem 1">
+            </div>
+            <div class="banner-slide">
+                <img src="src/img/header 4.png" alt="Imagem 2">
+            </div>
+        </div>
+
+        <!-- Botões minimalistas -->
+        <button class="banner-btn prev-btn">‹</button>
+        <button class="banner-btn next-btn">›</button>
+    </div>
+    <script src="src/js/header.js"></script>
+        </section>
+
+        <section id="catalogo">
+            <h2 class="section-title">Confira nossos Lançamentos</h2>
+            
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129598.png" class="dish-image" alt="Serum seda luminoso uv" onclick="openModal(this)">
+
+                    <h3 class="dish-title">Serum seda luminoso uv</h3>
+
+                    <span class="dish-description">100ml, antifrizz, proteção solar, proteção térmica.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 23,17</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Serum seda luminoso uv">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImg">
+                    </div>
+
+                    <i class="fa-solid fa-search-plus zoom-icon"></i>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/131944.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Máscara De Hidratação e Reconstrução+aminoácidos Dove 320g</h3>
+
+                    <span class="dish-description">Máscara de hidratação com aminoácidos para reconstrução capilar.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 28,95</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara De Hidratação e Reconstrução+aminoácidos Dove 320g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/131100.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Máscara Dove Nutrição Fusão De Óleos 500g</h3>
+
+                    <span class="dish-description">O creme de cabelo DOVE Nutrição + Fusão de Óleos é uma máscara de tratamento que nutre profundamente.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 30,18</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara Dove Nutrição Fusão De Óleos 500g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+      
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130736.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Toque de Seda Leave-In Sérum Tratamento 100ml</h3>
+
+                    <span class="dish-description">O caminho para o cabelo perfeito requer cuidados especiais, e hoje você pode conseguir essa mudança com a ajuda da Seda. 
+                        
+                    </span>
+                    <div class="dish-price">
+                        <span>R$ 18,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Toque de Seda Leave-In Sérum Tratamento 100ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+           
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128492.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Emulsão Day After Seda Boom Definição Intensa 350ml</h3>
+
+                    <span class="dish-description">Ativar, Condicionador, Dar Brilho, Definir, Hidratar, Maciez, Umectante, Vitalizar.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 18,59</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Emulsão Day After Seda Boom Definição Intensa 350ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+           
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128440.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme de pentear Seda Boom Volumão Power 350ml</h3>
+
+                    <span class="dish-description">nutre e potencializa o volume e brilho dos cabelos.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 15,18</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme de pentear Seda Boom Volumão Power 350ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128207.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme para Pentear Hidratante Seda Boom Definição Flexível 350ml</h3>
+
+                    <span class="dish-description">Pulseira feita com fio de murano extra vermelho rubi.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 15,18</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme para Pentear Hidratante Seda Boom Definição Flexível 350ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+          
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128413.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme Para Pentear Seda Babosa Oleos 300ml</h3>
+
+                    <span class="dish-description"> ótimo para cabelos que precisam de hidratação e umectação.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 13,01</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Seda Babosa Oleos 300ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+         
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127920.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme Para Pentear Ceramidas Brilho Seda 300ml</h3>
+
+                    <span class="dish-description">conta com Infusão Ativa,possui uma combinação de vitamina, óleo e proteína.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 13,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Ceramidas Brilho Seda 300ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130734.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme De Pentear Seda Toque De Seda 300Ml</h3>
+
+                    <span class="dish-description">Hidratação profunda: nutre os fios desde a primeira aplicação.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 13,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme De Pentear Seda Toque De Seda 300Ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+         
+                <div class="dish ">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129902.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme Para Pentear Seda Babosa + Óleos By Rayza 700ml</h3>
+
+                    <span class="dish-description"> Proporciona hidratação, definição, deixando os fios mais saudáveis, fortes e cheios de vida.</span>
+
+                   <div class="dish-price">
+                        <span>R$ 18,06</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Seda Babosa + Óleos By Rayza 700ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/126576.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme Para Pentear Boom Definição Pote 1kg Seda</h3>
+
+                    <span class="dish-description">sua fórmula exclusiva, enriquecida com Óleo de coco e Fitagem Complex.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 28,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Boom Definição Pote 1kg Seda">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+           
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129596.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Condicionador Seda Boom Hidratação Duradoura 250ml</h3>
+
+                    <span class="dish-description">Hidrata intensamente seus cachos, para um de super maciez.</span>
+
+                     <div class="dish-price">
+                        <span>R$ 17,06</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Condicionador Seda Boom Hidratação Duradoura 250ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+           
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128438.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Creme Dove Sérum Reparação Diária Vitamina E 50g</h3>
+
+                    <span class="dish-description">possui fórmula suave e hipoalergênica, a escolha ideal para peles sensíveis.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 17,58</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Creme Dove Sérum Reparação Diária Vitamina E 50g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+          
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130059.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Dove Stick Powder 45g</h3>
+
+                    <span class="dish-description"> possui fórmula com ¼ de creme hidratante e 0% álcool.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 25,32</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Dove Stick Powder 45g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/131964.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Shampoo Dove Umectação + Coco Antioxi 190ml</h3>
+
+                    <span class="dish-description">promove umectação intensa, ajudando a nutrir, proteger e revitalizar os fios.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 17,58</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Dove Umectação + Coco Antioxi 190ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+          
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/131949.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Shampoo Dove Reconstrução + Aminoácido 190ml Dove</h3>
+
+                    <span class="dish-description">recupera cabelos danificados e enfraquecidos. </span>
+
+                    <div class="dish-price">
+                        <span>R$ 17,58</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Dove Reconstrução + Aminoácido 190ml Dove">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129594.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Óleo Sérum Bifásico Dove Bond Repair + Peptídeo 110ml</h3>
+
+                    <span class="dish-description">proporciona hidratação e nutrição intensiva aos cabelos, deixando-os macios, sedosos e com um brilho radiante. </span>
+
+                    <div class="dish-price">
+                        <span>R$ 45,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Óleo Sérum Bifásico Dove Bond Repair + Peptídeo 110ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129586.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Máscara Capilar Dove 10 em 1 Bond Intense Repair + Peptídeo 250g</h3>
+
+                    <span class="dish-description">trata os fios profundamente danificados com benefícios visíveis em 1 minuto.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 42,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara Capilar Dove 10 em 1 Bond Intense Repair + Peptídeo 250g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+           
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130419.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Spray Tresemme Blindagem Cout Spray 180ml</h3>
+
+                    <span class="dish-description">antifrizz.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 18,00</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Spray Tresemme Blindagem Cout Spray 180ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+         
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130357.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Kit Shampoo 350ml + Condicionador 175ml Tresemmé Antiumidade</h3>
+
+                    <span class="dish-description"> Blindagem Antifrizz, com ácido hialurônico e queratina hidrolisada.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 28,43</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Kit Shampoo 350ml + Condicionador 175ml Tresemmé Antiumidade">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130824.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Sérum de Tratamento Tresemmé Blindagem Antiumidade 170ml</h3>
+
+                    <span class="dish-description">cabelos mais macios e livres do frizz. Enriquecido com Ácido Hialurônico e Queratina Hidrolisada</span>
+
+                    <div class="dish-price">
+                        <span>R$ 38,07</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Sérum de Tratamento Tresemmé Blindagem Antiumidade 170ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130359.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Máscara De Tratamento Tresemmé Blindagem Antiumidade 400g</h3>
+
+                    <span class="dish-description">é a solução ideal para quem busca cabelos impecáveis e protegidos.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 28,45</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara De Tratamento Tresemmé Blindagem Antiumidade 400g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+         
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129593.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Condicionador Dove Bond Intense Repair 150ml</h3>
+
+                    <span class="dish-description">nova tecnologia patenteada Bio-Protein Care, proteína 100% compatível com a estrutura natural do cabelo.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 21,59</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Condicionador Dove Bond Intense Repair 150ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129639.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Ricca Kit Pentes Basic Com 3un</h3>
+
+                    <span class="dish-description">Pente prático e funcional, ideal para o dia a dia e profissional.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 16,63</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Ricca Kit Pentes Basic Com 3un">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/129632.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Touca Estampada Para Banho Ricca</h3>
+
+                    <span class="dish-description">é impermeável, e possui um elástico confortável. é super resistente, e impermeável.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 4,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Touca Estampada Para Banho Ricca">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+         
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128593.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Twist Antitranspirante Vanilla Herbíssimo 45g</h3>
+
+                    <span class="dish-description">uma nova embalagem para o seu creme, focando na praticidade do dia a dia.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 14,36</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Twist Antitranspirante Vanilla Herbíssimo 45g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130005.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Ant. Em Creme Rexona Clinical Extra Dry 58g</h3>
+
+                    <span class="dish-description">possui uma fórmula com 96 horas de proteção contra o suor e o mau odor.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 27,29</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Ant. Em Creme Rexona Clinical Extra Dry 58g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127955.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Antitranspirante Creme Herbíssimo Vanilla 55g</h3>
+
+                    <span class="dish-description">com glicerina vegetal e óleo de girassol, que promovem a hidratação das axilas por até 24 horas.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 8,58</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Antitranspirante Creme Herbíssimo Vanilla 55g">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/130915.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Óleo Capilar e Corporal Farmax Babosa Com 100ml</h3>
+
+                    <span class="dish-description">propriedades altamente hidratantes e é rico em minerais e nutrientes.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 15,73</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Óleo Capilar e Corporal Farmax Babosa Com 100ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+    
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/100543.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Óleo Capilar e Corporal Farmax Semente de Uva 60ml</h3>
+
+                    <span class="dish-description">revitalizar cabelos e pele. Rico em componentes regeneradores, fortalece e dá brilho aos fios.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 15,50</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Óleo Capilar e Corporal Farmax Semente de Uva 60ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+                
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/131452.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Desodorante Roll On Nivea Invisible For Black E White 50ml</h3>
+
+                    <span class="dish-description">Proteção Antimanchas, Evita Manchas Amarelas, Proteção Invisível e Fragrância Leve</span>
+
+                    <div class="dish-price">
+                        <span>14,20</span>
+                          <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Roll On Nivea Invisible For Black E White 50ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+    </main>
+
+</section>
+
+    <section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Perguntas Frequentes</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Como funciona o serviço?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+       <p>É rápido e 100% online! Você tem a melhor experiência de compra, seguindo estas etapas:
+       <li>Escolha: Você navega, seleciona os produtos desejados e vai ser direcionada direto para nosso atendimento.</li>
+       <li>Pagamento Seguro: Finaliza o pedido e realiza o pagamento de forma segura.</li>
+       <li>Processamento e Envio: Assim que o pagamento é aprovado, separamos o seu pedido, embalamos com cuidado e o enviamos.</li>
+       <li>Entrega no seu Endereço: Você recebe seus produtos no conforto da sua casa.</li></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        De onde é a empresa?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Somos de Várzea Grande, Mato Grosso.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Qual o horário de atendimento?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Atendemos de segunda a sábado, das 09h às 18h.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Posso falar com um atendente?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Sim! Basta clicar no botão de WhatsApp no canto da página :)</p>
+      </div>
+    </div>
+  </div>
+  <script src="src/js/script.js"></script>
+</section>
+    <!-- Botão Flutuante -->
+<div class="fab-container">
+  <div class="fab fab-main" id="fabMain">
+    <i class="fas fa-bars"></i>
+  </div>
+  
+  <div class="fab fab-close" id="fabClose">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <div class="fab fab-up" id="fabUp">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <div class="fab fab-whatsapp">
+    <a href="https://wa.me/5599999999999" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <div class="fab fab-instagram">
+    <a href="https://instagram.com/seu_perfil" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  
+  </div>
+<!-- Importar o JS -->
+<script src="src/js/botao.js"></script>
+    <footer>
+        <img src="src/img/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">© 2025 Kauany Kamily.</span>
+
+            <div class="social-media-buttons">
+                <a href="http://wa.me/6599686879">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="http://wa.me/6599686879">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
