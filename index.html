@@ -64,17 +64,90 @@
             <div class="banner-slide active">
                 <img src="src/img/header 2 (1).png" alt="Imagem 1">
             </div>
-            <div class="banner-slide">
-                <img src="src/img/header 4.png" alt="Imagem 2">
-            </div>
         </div>
-
-        <!-- Botões minimalistas -->
-        <button class="banner-btn prev-btn">‹</button>
-        <button class="banner-btn next-btn">›</button>
-    </div>
     <script src="src/js/header.js"></script>
-        </section>
+   </section>
+   
+      <!--seçao quadrado rotativo-->
+   <div class="announcement-bar">
+  <div class="announcement-track">
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+    <span> AUREA </span>
+  </div>
+  </div>
+
+<section class="brand-vibe">
+   <div class="brand-vibe-header">
+    <h2>O Cuidado que Você Merece</h2>
+    <p>Explore nossa coleção de produtos</p>
+  </div>
+   <div class="brand-vibe-grid">
+    <div class="vibe-item">
+      <img src="src/img/textura.png" alt="Aurea estética skincare">
+    </div>
+    <div class="vibe-item">
+      <img src="src/img/beleza real.png" alt="Aurea beleza natural">
+    </div>
+    <div class="vibe-item">
+      <img src="src/img/skincar.jpg" alt="Aurea autocuidado">
+    </div>
+    <div class="vibe-item">
+      <img src="src/img/autocuidado.png" alt="Aurea textura produto">
+    </div>
+  </div>
+
+  <section class="favorite-brands">
+  <h2 class="brands-title">Marcas que você ama</h2>
+  <p class="brands-subtitle">
+    Selecionamos as marcas mais queridas para cuidar de você todos os dias
+  </p>
+ <div class="brand-slider">
+    <div class="brand-track">
+      <!-- 1ª sequência -->
+      <div class="brand-logo"><img src="src/img/seda.png" alt="Seda"></div>
+      <div class="brand-logo"><img src="src/img/dove.png" alt="Dove"></div>
+      <div class="brand-logo"><img src="src/img/tresemme.png" alt="Tresemmé"></div>
+      <div class="brand-logo"><img src="src/img/nivea.png" alt="Nivea"></div>
+      <div class="brand-logo"><img src="src/img/rexona.png" alt="Rexona"></div>
+      <div class="brand-logo"><img src="src/img/ricca.png" alt="Ricca"></div>
+
+      <!-- 2ª sequência (igual à primeira para loop infinito) -->
+      <div class="brand-logo"><img src="src/img/seda.png" alt="Seda"></div>
+      <div class="brand-logo"><img src="src/img/dove.png" alt="Dove"></div>
+      <div class="brand-logo"><img src="src/img/tresemme.png" alt="Tresemmé"></div>
+      <div class="brand-logo"><img src="src/img/nivea.png" alt="Nivea"></div>
+      <div class="brand-logo"><img src="src/img/rexona.png" alt="Rexona"></div>
+      <div class="brand-logo"><img src="src/img/ricca.png" alt="Ricca"></div>
+    </div>
+</section>
+
+   </section>
+    <div class="filtros">
+  <input type="text" id="searchInput" placeholder="Buscar produto...">
+
+  <select id="brandFilter">
+    <option value="">Todas as marcas</option>
+    <option value="seda">Seda</option>
+    <option value="dove">Dove</option>
+    <option value="tresemmé">Tresemmé</option>
+    <option value="ricca">Ricca</option>
+    <option value="farmax">Farmax</option>
+    <option value="nivea">Nivea</option>
+    <option value="herbissimo">Herbissimo</option>
+    <option value="rexona">Rexona</option>
+  </select>
+</div>
+</section>
+
+    </section>
 
         <section id="catalogo">
             <h2 class="section-title">Confira nossos Lançamentos</h2>
@@ -99,13 +172,6 @@
                         </button>
                     </div>
 
-                    <div id="imageModal" class="modal" onclick="closeModal()">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="modalImg">
-                    </div>
-
-                    <i class="fa-solid fa-search-plus zoom-icon"></i>
-
                 </div>
             
                 <div class="dish">
@@ -113,15 +179,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/131944.png" class="dish-image" alt="">
+                    <img src="src/img/127929.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Máscara De Hidratação e Reconstrução+aminoácidos Dove 320g</h3>
+                    <h3 class="dish-title">Máscara de tratamento seda prebioticos+biotina 300gr</h3>
 
-                    <span class="dish-description">Máscara de hidratação com aminoácidos para reconstrução capilar.</span>
+                    <span class="dish-description">é formulado com prebióticos, componentes que promovem o crescimento de microorganismos bonscrescimento forte e saudável dos fios.</span>
 
                     <div class="dish-price">
-                        <span>R$ 28,95</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara De Hidratação e Reconstrução+aminoácidos Dove 320g">
+                        <span>R$ 15,89</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara de tratamento seda prebioticos+biotina 300gr">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -235,15 +301,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/128413.png" class="dish-image" alt="">
+                    <img src="src/img/127997.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Creme Para Pentear Seda Babosa Oleos 300ml</h3>
+                    <h3 class="dish-title">Creme Para Pentear Seda 300ml Brilho Encantado Frozen</h3>
 
-                    <span class="dish-description"> ótimo para cabelos que precisam de hidratação e umectação.</span>
+                    <span class="dish-description"> dá mais força e brilho aos fios, ajudando no desembaraço, além de deixá-los com um cheirinho delicioso!.</span>
 
                     <div class="dish-price">
-                        <span>R$ 13,01</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Seda Babosa Oleos 300ml">
+                        <span>R$ 14,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Seda 300ml Brilho Encantado Frozen">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -255,15 +321,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/127920.png" class="dish-image" alt="">
+                    <img src="src/img/129284.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Creme Para Pentear Ceramidas Brilho Seda 300ml</h3>
+                    <h3 class="dish-title">Creme Para Pentear Seda Luminous UV 300ml</h3>
 
-                    <span class="dish-description">conta com Infusão Ativa,possui uma combinação de vitamina, óleo e proteína.</span>
+                    <span class="dish-description">com 6% Glycol + Vita C Complex, cabelo alinhado e iluminado por 72h.</span>
 
                     <div class="dish-price">
-                        <span>R$ 13,00</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Ceramidas Brilho Seda 300ml">
+                        <span>R$ 14,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Seda Luminous UV 300ml">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -315,14 +381,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/126576.png" class="dish-image" alt="">
+                    <img src="src/img/130729.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Creme Para Pentear Boom Definição Pote 1kg Seda</h3>
+                    <h3 class="dish-title">Seda Máscara De Tratamento 300g Colágeno + Vitamina C</h3>
 
-                    <span class="dish-description">sua fórmula exclusiva, enriquecida com Óleo de coco e Fitagem Complex.</span>
+                    <span class="dish-description">Para todos os tipos de cabelos que precisam reparar os fios danificados para ficarem mais fortes e luminosos.</span>
 
                     <div class="dish-price">
-                        <span>R$ 28,00</span>
+                        <span>R$ 17,50</span>
                         <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Boom Definição Pote 1kg Seda">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
@@ -355,15 +421,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/128438.png" class="dish-image" alt="">
+                    <img src="src/img/8863.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Desodorante Creme Dove Sérum Reparação Diária Vitamina E 50g</h3>
+                    <h3 class="dish-title">Desodorante Rexona Rollon Women Powder Compacto 30Ml</h3>
 
-                    <span class="dish-description">possui fórmula suave e hipoalergênica, a escolha ideal para peles sensíveis.</span>
+                    <span class="dish-description">Sua tecnologia exclusiva contém cápsulas inteligentes que respondem diretamente ao movimento.</span>
 
                     <div class="dish-price">
-                        <span>R$ 17,58</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Creme Dove Sérum Reparação Diária Vitamina E 50g">
+                        <span>R$ 8,50</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Rexona Rollon Women Powder Compacto 30Ml">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -395,6 +461,126 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
+                    <img src="src/img/128112.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Shampoo Dove Ritual de Reparação 200ml </h3>
+
+                    <span class="dish-description">A nutrição avançada de Dove com o poder da natureza.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 21,59</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Dove Ritual de Reparação 200ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/128102.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Shampoo Dove Hidratação Intensa Oxigênio 200ml</h3>
+
+                    <span class="dish-description">sua fórmula nutre profundamente o cabelo, sem pesar os fios.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 21,59</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Dove Hidratação Intensa Oxigênio 200ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127942.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Condicionador Seda Liso Perfeito 325ml</h3>
+
+                    <span class="dish-description"> O Tratamento Condicionador Seda Liso Perfeito conta com Infusão Ativa tem uma poderosa combinação de vitamina.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 17,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Condicionador Seda Liso Perfeito 325ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127944.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Condicionador Seda 300ml Crespos Encantados Tiana</h3>
+
+                    <span class="dish-description">Hidratação e brilho para os cachinhos.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 17,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Condicionador Seda 300ml Crespos Encantados Tiana">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127928.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Shampoo Seda Tiana Crespos Encantados com 300ml</h3>
+
+                    <span class="dish-description"> Hidratação e brilho para os cachinhos,além de deixá-los com um cheirinho delicioso!.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 15,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Seda Tiana Crespos Encantados com 300ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127941.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Creme Para Pentear Moana Cachos Encantados -300ml</h3>
+
+                    <span class="dish-description">Cachinhos Definidos o Dia Todo, Hidratação, Ajuda no desembaraço.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 13,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Creme Para Pentear Moana Cachos Encantados -300ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
                     <img src="src/img/131964.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">Shampoo Dove Umectação + Coco Antioxi 190ml</h3>
@@ -404,6 +590,26 @@
                     <div class="dish-price">
                         <span>R$ 17,58</span>
                         <button class="btn-default whatsapp-redirect" data-item-name="Shampoo Dove Umectação + Coco Antioxi 190ml">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                   
+                  </div>
+                    
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/127943.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">Condicionador Seda Moana Cachos Encantados 300ml </h3>
+
+                    <span class="dish-description">hidrata profundamente, facilita o desembaraço e define os fios com fragrância suave.</span>
+
+                    <div class="dish-price">
+                        <span>R$ 16,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Condicionador Seda Moana Cachos Encantados 300ml">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -455,15 +661,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/129586.png" class="dish-image" alt="">
+                    <img src="src/img/31998.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Máscara Capilar Dove 10 em 1 Bond Intense Repair + Peptídeo 250g</h3>
+                    <h3 class="dish-title">Piranha Ricca Glam - 1 Unidade</h3>
 
-                    <span class="dish-description">trata os fios profundamente danificados com benefícios visíveis em 1 minuto.</span>
+                    <span class="dish-description">o acessório perfeito para capturar aquele look sofisticado e despojado ao mesmo tempo.</span>
 
                     <div class="dish-price">
-                        <span>R$ 42,00</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Máscara Capilar Dove 10 em 1 Bond Intense Repair + Peptídeo 250g">
+                        <span>R$ 8,80</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Piranha Ricca Glam - 1 Unidade">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -655,15 +861,15 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/img/127955.png" class="dish-image" alt="">
+                    <img src="src/img/127903.png" class="dish-image" alt="">
 
-                    <h3 class="dish-title">Desodorante Antitranspirante Creme Herbíssimo Vanilla 55g</h3>
+                    <h3 class="dish-title">Seda Boom Definição Intensa Creme de Pentear 350ml</h3>
 
-                    <span class="dish-description">com glicerina vegetal e óleo de girassol, que promovem a hidratação das axilas por até 24 horas.</span>
+                    <span class="dish-description">Mantém os cachos totalmente definidos por até 72h.</span>
 
                     <div class="dish-price">
-                        <span>R$ 8,58</span>
-                        <button class="btn-default whatsapp-redirect" data-item-name="Desodorante Antitranspirante Creme Herbíssimo Vanilla 55g">
+                        <span>R$ 14,99</span>
+                        <button class="btn-default whatsapp-redirect" data-item-name="Seda Boom Definição Intensa Creme de Pentear 350ml">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -815,22 +1021,127 @@
   </div>
 <!-- Importar o JS -->
 <script src="src/js/botao.js"></script>
-    <footer>
-        <img src="src/img/wave.svg" alt="">
+    <footer class="footer-aurea">
+  <div class="footer-container">
 
-        <div id="footer_items">
-            <span id="copyright">© 2025 Kauany Kamily.</span>
+    <!-- Marca -->
+    <div class="footer-brand">
+      <img src="src/img/logo.png" alt="Aurea Cosméticos">
+      <p>
+        Mais que uma marca, um convite para realçar sua confiança, 
+        cuidar da sua beleza e celebrar o seu brilho.
+      </p>
+    </div>
 
-            <div class="social-media-buttons">
-                <a href="http://wa.me/6599686879">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="http://wa.me/6599686879">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-   
+    <!-- Navegação -->
+    <div class="footer-links">
+      <h4>Institucional</h4>
+      <a href="#home">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#faq-section">Perguntas Frequentes</a>
+      <a href="http://wa.me/6599686879" target="_blank">Fale Conosco</a>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-contact">
+      <h4>Atendimento</h4>
+      <p>📍 Várzea Grande - MT</p>
+      <p>🕒 Seg a Sáb • 09h às 18h</p>
+      <a href="http://wa.me/6599686879" target="_blank" class="footer-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Atendimento via WhatsApp
+      </a>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h4>Siga a Aurea</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/p/DSSecprjDlF/?igsh=OW9pdm9nOTJ4bTlt" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://wa.me/6599686879" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Rodapé final -->
+  <div class="footer-bottom">
+    <p>© 2025 Aurea Cosméticos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</footer>
+<!--carrinho -->
+<!-- BOTÃO FLUTUANTE DO CARRINHO -->
+<div id="cartButton">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cartBadge">0</span>
+</div>
+<div id="cartOverlay"></div>
+
+<!-- CARRINHO LATERAL -->
+<aside id="cartDrawer">
+  <header class="cart-header">
+    <h2>Meu carrinho</h2>
+    <button id="closeCart">&times;</button>
+  </header>
+
+  <section id="cartItems" class="cart-items"></section>
+
+  <footer class="cart-footer">
+    <div class="client-field">
+      <label>Nome do cliente</label>
+      <input 
+        type="text" 
+        id="clientName" 
+        placeholder="Digite seu nome"
+        required
+      >
+      <small id="nameError">Informe seu nome para continuar</small>
+    </div>
+
+    <div class="cart-total">
+      <span>Total</span>
+      <strong>R$ <span id="cartTotal">0,00</span></strong>
+    </div>
+    <div class="delivery-note">
+  *Taxa de entrega será cobrada à parte</div>
+    <button id="finishOrder" disabled>
+      Finalizar compra
+    </button>
+  </footer>
+</aside>
+<link rel="stylesheet" href="styles/carrinho.css">
+<script src="js/script.js"></script>
+<div class="cart-item">
+<!--ler nome -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const searchInput = document.getElementById('searchInput');
+  const brandFilter = document.getElementById('brandFilter');
+  const products = document.querySelectorAll('#dishes .dish');
+
+  function filterProducts() {
+    const searchText = searchInput.value.toLowerCase();
+    const selectedBrand = brandFilter.value.toLowerCase();
+
+    products.forEach(product => {
+      const text = product.innerText.toLowerCase();
+
+      const matchSearch = text.includes(searchText);
+      const matchBrand = selectedBrand === "" || text.includes(selectedBrand);
+
+      if (matchSearch && matchBrand) {
+        product.style.display = "";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  }
+
+  searchInput.addEventListener('input', filterProducts);
+  brandFilter.addEventListener('change', filterProducts);
+
+});
+</script>
 </body>
 </html>
